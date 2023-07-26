@@ -1,0 +1,15 @@
+.sree-menu-list-item {
+  background-color: antiquewhite;
+  margin: 10px;
+}
+
+.items {
+  margin: 20px;
+}
+
+.body-portion {
+  height: 600px;
+  width: 1500px;
+  margin-left: 20px;
+  border: 2px solid aquamarine;
+}
