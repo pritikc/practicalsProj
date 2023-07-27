@@ -1,1 +1,34 @@
-<p>products works!</p>
+<!-- <p>products worksss!</p> -->
+
+<p *ngIf="errorFlag" class="errorline">Please check URL!!</p>
+<div class="container my-2">
+
+    <!-- <button class="btn-secondary">11</button> -->
+    <table class="table table-dark table-hover">
+        <tr>
+            <th>Id</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Category</th>
+            <th>Disc(%)</th>
+            <th>Stock</th>
+            <th>Image</th>
+        </tr>
+        <tr *ngFor="let products of alldata">
+
+            <td>{{products.id}}</td>
+            <td>{{products.title}}</td>
+            <td>{{products.description}}</td>
+            <td>{{products.price}}</td>
+            <td>{{products.category}}</td>
+            <td>{{products.discountPercentage}}</td>
+            <td>{{products.stock}}</td>
+            <td> 
+                <!-- <ng-container *ngFor="let path of products.images"> -->
+                    <img [src]="products.images[0]" width="50px" height="50px">
+                <!-- </ng-container> </td> -->
+            <!-- <td><img ng-src="{{products.images}}" style="height:100px;width:100px" /></td> -->
+        </tr>
+    </table>
+</div>
