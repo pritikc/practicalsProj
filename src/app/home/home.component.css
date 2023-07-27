@@ -1,5 +1,5 @@
 .sree-menu-list-item {
-  background-color: antiquewhite;
+  background-color: rgb(117, 117, 117);
   margin: 10px;
 }
 
@@ -8,8 +8,11 @@
 }
 
 .body-portion {
-  height: 600px;
-  width: 1500px;
-  margin-left: 20px;
-  border: 2px solid aquamarine;
+  /* height: 600px; */
+  /* width: 1500px; */
+  /* margin-left: 20px; */
+  border: 2px solid rgb(57, 57, 57);
 }
+/* .navbar .nav-link {
+  color: rgb(251, 251, 251) !important;
+} */

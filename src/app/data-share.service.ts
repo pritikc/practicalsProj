@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -5,5 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class DataShareService {
 
-  constructor() { }
+  constructor(private httpCall:HttpClient) { }
+
+
+callGetData(){
+  let dataResult = this.httpCall.get('https://dummyjson.com/products');
+  return dataResult;
+
+}
+
 }
