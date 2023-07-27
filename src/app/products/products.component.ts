@@ -30,8 +30,7 @@ export class ProductsComponent {
     
   this.ds.callGetData().subscribe( 
     
-    (productResult : any) => {debugger;
-      debugger;
+    (productResult : any) => {
 this.alldata = productResult.products;
 this.errorFlag = false;
     },
